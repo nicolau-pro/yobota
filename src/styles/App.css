@@ -1,0 +1,378 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 22.5px 0;
+  color: #5c5c5c;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+header * {
+  display: inline-block;
+  height: 45px;
+  line-height: 37.5px;
+  margin: 7.5px 22.5px;
+}
+
+@media screen and (max-width: 576px) {
+  header h1 {
+    font-size: 30px;
+  }
+}
+
+footer {
+  font-size: 12px;
+  background-color: #222222;
+  padding: 9px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #41aade !important;
+}
+
+main .links {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 22.5px;
+}
+
+main .links a div {
+  display: block;
+  height: 0px;
+  height: 22.5px;
+}
+
+main .links a div:first-of-type {
+  color: #d20131;
+}
+
+main .links a div:last-of-type {
+  color: #5c5c5c;
+  text-decoration: underline;
+}
+
+main .controllers {
+  margin-bottom: 30px;
+}
+
+main .controllers * {
+  font-size: 15px;
+}
+
+main .controllers label {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+main .controllers > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 7.5px;
+}
+
+main .controllers > form * {
+  height: 30px;
+  line-height: 24px;
+}
+
+main .controllers > form i {
+  font-size: 13.2px;
+  height: 19.2px;
+}
+
+@media screen and (max-width: 768px) {
+  main .controllers > form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+main .controllers > form > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 7.5px;
+}
+
+@media screen and (max-width: 768px) {
+  main .controllers > form > * {
+    margin: 7.5px;
+  }
+}
+
+main .controllers > form > *:nth-child(1) {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+main .controllers > form > *:nth-child(1) > label {
+  min-width: 120px;
+  padding-top: 2.4px;
+}
+
+main .controllers > form > *:nth-child(1) > select {
+  line-height: 18.75px;
+}
+
+main .controllers > form > *:nth-child(2) {
+  -webkit-box-flex: 10;
+  -ms-flex-positive: 10;
+  flex-grow: 10;
+}
+
+main .controllers > form > *:nth-child(2) > input {
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #ced4da;
+  border-right-width: 0;
+  padding-left: 6px;
+}
+
+main .controllers > form > *:nth-child(2) > button {
+  width: 30px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #ced4da;
+  border-left-width: 0;
+  background-color: #d20131;
+  color: #ffffff;
+}
+
+main .controllers > form > *:nth-child(3) {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+main .controllers > form > *:nth-child(3) > label {
+  min-width: 60px;
+  padding-top: 2.4px;
+}
+
+main .controllers > form > *:nth-child(3) > select {
+  line-height: 18.75px;
+}
+
+main .pageNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 9.6px;
+  margin: 22.5px 0;
+}
+
+main .pageNavigation * {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+main .pageNavigation > div {
+  width: 495px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+  main .pageNavigation > div {
+    width: 225px;
+  }
+}
+
+main .pageNavigation > div > * {
+  width: 37.5px;
+  height: 37.5px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0 3.75px;
+}
+
+main .pageNavigation > div .mobileOnly {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  main .pageNavigation > div .btn-secondary {
+    display: none;
+  }
+  main .pageNavigation > div .mobileOnly {
+    display: block;
+  }
+}
+
+main .pageNavigation > div > span {
+  color: #6c757d;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  main .pageNavigation > div > span {
+    display: none;
+  }
+}
+
+main .pageNavigation > div i {
+  font-size: 9.6px;
+}
+
+main .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-bottom: 60px;
+}
+
+main .display > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 15px;
+  padding: 0;
+  border-radius: 4.5px;
+  border: 1px solid #1e2854;
+  overflow: hidden;
+}
+
+main .display > div > div ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main .display > div > div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 22.5px;
+}
+
+main .display > div > div ul li:nth-of-type(even) {
+  background: #e2e6f5;
+  color: #1e2854;
+}
+
+main .display > div > div ul li:last-of-type {
+  border-bottom: none;
+}
+
+main .display > div > div ul li:nth-of-type(even) {
+  background: #e2e6f5;
+  color: #1e2854;
+}
+
+main .display > div > div ul li > span {
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  padding: 4.5px 6.75px;
+  margin: 0;
+}
+
+main .display > div > div ul li > span:first-of-type {
+  background-color: #1e2854;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 120px;
+  border-bottom: 1px dotted #394c9f;
+}
+
+main .charts {
+  border-top: 1px dotted darkgray;
+  padding: 30px 15px;
+}
+
+main .charts:last-of-type {
+  margin-bottom: 75px;
+}
+
+main .charts h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=App.css.map */

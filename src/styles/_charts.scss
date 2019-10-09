@@ -1,0 +1,13 @@
+.charts {
+  border-top: 1px dotted lighten($lightGrey, 30%);
+  padding: 40 * $pt 20 * $pt;
+  &:last-of-type {
+    margin-bottom: 100 * $pt;
+  }
+  h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40 * $pt;
+  }
+}

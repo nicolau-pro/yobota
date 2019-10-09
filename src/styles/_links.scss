@@ -1,0 +1,27 @@
+.links {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30 * $pt;
+
+  a {
+    div {
+      display: block;
+      height: 0 * $pt;
+      height: 30 * $pt;
+
+      &:first-of-type {
+        color: $red;
+      }
+
+      &:last-of-type {
+        color: $lightGrey;
+        text-decoration: underline;
+      }
+    }
+  }
+}
