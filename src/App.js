@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./styles/App.css";
-import Link from "./components/Link";
+import MenuLink from "./components/MenuLink";
 import Controllers from "./components/Controllers";
 import Pages from "./components/Pages";
 import Display from "./components/Display";
@@ -179,9 +179,9 @@ class App extends Component {
           path="/"
           render={props => (
             <React.Fragment>
-              <Link
+              <MenuLink
                 icon="pie-chart"
-                href="/charts"
+                to="/charts"
                 text="Go to charts section"
               />
               <Controllers
@@ -206,7 +206,7 @@ class App extends Component {
           path="/charts"
           render={props => (
             <React.Fragment>
-              <Link icon="data" href="/" text="Go to list section" />
+              <MenuLink icon="data" to="/" text="Go to list section" />
               <Charts data={this.state.data} />
             </React.Fragment>
           )}
